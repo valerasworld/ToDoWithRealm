@@ -14,6 +14,7 @@
 		9F33C7B52BB4A478008870C5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9F33C7B42BB4A478008870C5 /* Realm */; };
 		9F33C7B72BB4A478008870C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F33C7B62BB4A478008870C5 /* RealmSwift */; };
 		9F33C7BA2BB4A4DD008870C5 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7B92BB4A4DD008870C5 /* ToDo.swift */; };
+		9F33C7BD2BB4AFB1008870C5 /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9F33C7A92BB4A323008870C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F33C7AC2BB4A323008870C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F33C7B92BB4A4DD008870C5 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,9 @@
 		9F33C7A42BB4A31B008870C5 /* ToDoWithRealm */ = {
 			isa = PBXGroup;
 			children = (
-				9F33C7B82BB4A4C6008870C5 /* Models */,
 				9F33C7A52BB4A31B008870C5 /* ToDoWithRealmApp.swift */,
-				9F33C7A72BB4A31B008870C5 /* ToDoListView.swift */,
+				9F33C7B82BB4A4C6008870C5 /* Models */,
+				9F33C7BB2BB4AF94008870C5 /* Views */,
 				9F33C7A92BB4A323008870C5 /* Assets.xcassets */,
 				9F33C7AB2BB4A323008870C5 /* Preview Content */,
 			);
@@ -80,6 +82,15 @@
 				9F33C7B92BB4A4DD008870C5 /* ToDo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9F33C7BB2BB4AF94008870C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F33C7A72BB4A31B008870C5 /* ToDoListView.swift */,
+				9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				9F33C7BA2BB4A4DD008870C5 /* ToDo.swift in Sources */,
 				9F33C7A82BB4A31B008870C5 /* ToDoListView.swift in Sources */,
+				9F33C7BD2BB4AFB1008870C5 /* ToDoListRow.swift in Sources */,
 				9F33C7A62BB4A31B008870C5 /* ToDoWithRealmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
