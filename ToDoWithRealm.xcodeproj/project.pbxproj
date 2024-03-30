@@ -15,6 +15,15 @@
 		9F33C7B72BB4A478008870C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F33C7B62BB4A478008870C5 /* RealmSwift */; };
 		9F33C7BA2BB4A4DD008870C5 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7B92BB4A4DD008870C5 /* ToDo.swift */; };
 		9F33C7BD2BB4AFB1008870C5 /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */; };
+		9F33C7BF2BB4EC22008870C5 /* ListOfToDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7BE2BB4EC21008870C5 /* ListOfToDos.swift */; };
+		9F33C7C12BB4ED4E008870C5 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7C02BB4ED4E008870C5 /* ListsView.swift */; };
+		9F33C7C32BB4F140008870C5 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7C22BB4F140008870C5 /* ListRowView.swift */; };
+		9F33C7C62BB5EC90008870C5 /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F33C7C52BB5EC8F008870C5 /* PropertyList.plist */; };
+		9F33C7C82BB5ED09008870C5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7C72BB5ED09008870C5 /* Store.swift */; };
+		9F33C7CA2BB5EF91008870C5 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7C92BB5EF91008870C5 /* PayWallView.swift */; };
+		9F33C7CC2BB6140F008870C5 /* AccessZonesStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7CB2BB6140F008870C5 /* AccessZonesStoreView.swift */; };
+		9F33C7CE2BB63E16008870C5 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7CD2BB63E16008870C5 /* SubscriptionsView.swift */; };
+		9F33C7D32BB75A33008870C5 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33C7D22BB75A33008870C5 /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,16 @@
 		9F33C7AC2BB4A323008870C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F33C7B92BB4A4DD008870C5 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
+		9F33C7BE2BB4EC21008870C5 /* ListOfToDos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfToDos.swift; sourceTree = "<group>"; };
+		9F33C7C02BB4ED4E008870C5 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
+		9F33C7C22BB4F140008870C5 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		9F33C7C42BB5EAB8008870C5 /* Product.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Product.storekit; sourceTree = "<group>"; };
+		9F33C7C52BB5EC8F008870C5 /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		9F33C7C72BB5ED09008870C5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9F33C7C92BB5EF91008870C5 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
+		9F33C7CB2BB6140F008870C5 /* AccessZonesStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessZonesStoreView.swift; sourceTree = "<group>"; };
+		9F33C7CD2BB63E16008870C5 /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
+		9F33C7D22BB75A33008870C5 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				9F33C7A52BB4A31B008870C5 /* ToDoWithRealmApp.swift */,
+				9F33C7C42BB5EAB8008870C5 /* Product.storekit */,
+				9F33C7C52BB5EC8F008870C5 /* PropertyList.plist */,
+				9F33C7C72BB5ED09008870C5 /* Store.swift */,
+				9F33C7D22BB75A33008870C5 /* StoreView.swift */,
+				9F33C7D12BB75A15008870C5 /* Useless */,
 				9F33C7B82BB4A4C6008870C5 /* Models */,
 				9F33C7BB2BB4AF94008870C5 /* Views */,
 				9F33C7A92BB4A323008870C5 /* Assets.xcassets */,
@@ -79,6 +103,7 @@
 		9F33C7B82BB4A4C6008870C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9F33C7BE2BB4EC21008870C5 /* ListOfToDos.swift */,
 				9F33C7B92BB4A4DD008870C5 /* ToDo.swift */,
 			);
 			path = Models;
@@ -87,10 +112,22 @@
 		9F33C7BB2BB4AF94008870C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F33C7C02BB4ED4E008870C5 /* ListsView.swift */,
+				9F33C7C22BB4F140008870C5 /* ListRowView.swift */,
 				9F33C7A72BB4A31B008870C5 /* ToDoListView.swift */,
 				9F33C7BC2BB4AFB1008870C5 /* ToDoListRow.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9F33C7D12BB75A15008870C5 /* Useless */ = {
+			isa = PBXGroup;
+			children = (
+				9F33C7C92BB5EF91008870C5 /* PayWallView.swift */,
+				9F33C7CD2BB63E16008870C5 /* SubscriptionsView.swift */,
+				9F33C7CB2BB6140F008870C5 /* AccessZonesStoreView.swift */,
+			);
+			path = Useless;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F33C7AD2BB4A323008870C5 /* Preview Assets.xcassets in Resources */,
+				9F33C7C62BB5EC90008870C5 /* PropertyList.plist in Resources */,
 				9F33C7AA2BB4A323008870C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,9 +208,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F33C7C82BB5ED09008870C5 /* Store.swift in Sources */,
+				9F33C7CE2BB63E16008870C5 /* SubscriptionsView.swift in Sources */,
 				9F33C7BA2BB4A4DD008870C5 /* ToDo.swift in Sources */,
+				9F33C7CA2BB5EF91008870C5 /* PayWallView.swift in Sources */,
+				9F33C7C32BB4F140008870C5 /* ListRowView.swift in Sources */,
 				9F33C7A82BB4A31B008870C5 /* ToDoListView.swift in Sources */,
 				9F33C7BD2BB4AFB1008870C5 /* ToDoListRow.swift in Sources */,
+				9F33C7BF2BB4EC22008870C5 /* ListOfToDos.swift in Sources */,
+				9F33C7C12BB4ED4E008870C5 /* ListsView.swift in Sources */,
+				9F33C7CC2BB6140F008870C5 /* AccessZonesStoreView.swift in Sources */,
+				9F33C7D32BB75A33008870C5 /* StoreView.swift in Sources */,
 				9F33C7A62BB4A31B008870C5 /* ToDoWithRealmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

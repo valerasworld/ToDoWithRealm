@@ -11,7 +11,8 @@ import SwiftUI
 struct ToDoWithRealmApp: App {
     var body: some Scene {
         WindowGroup {
-            ToDoListView()
+            StoreView()
+                .environmentObject(Store())
                 .onAppear {
                     print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
                     UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")

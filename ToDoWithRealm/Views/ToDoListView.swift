@@ -9,59 +9,71 @@ import SwiftUI
 import RealmSwift
 
 struct ToDoListView: View {
-    @ObservedResults(ToDo.self) var toDos
+    @ObservedRealmObject var listOfToDos: ListOfToDos
     @State private var name = ""
     @State private var searchFilter = ""
-    @FocusState private var focus: Bool?
+    @FocusState private var isFocused: Bool?
     
     var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
-                    TextField("New ToDo", text: $name)
-                        .focused($focus, equals: true)
-                        .textFieldStyle(.roundedBorder)
-                    
-                    Button {
-                        let newToDo = ToDo(name: name)
-                        $toDos.append(newToDo)
-                        name = ""
-                        focus = nil
-                    } label: {
-                        Image(systemName: "plus.circle.fill")
-                    }
-                    .disabled(name.isEmpty)
-                }
-                .padding()
+        VStack {
+            HStack {
+                TextField("New ToDo", text: $name)
+                    .focused($isFocused, equals: true)
+                    .textFieldStyle(.roundedBorder)
                 
-                List {
-//                    ForEach(toDos.sorted(byKeyPath: "isCompleted")) { toDo in
-                    ForEach(toDos.sorted(by: [
-                        SortDescriptor(keyPath: "isCompleted"),
-                        SortDescriptor(keyPath: "urgency", ascending: false)
-                    ])) { toDo in
-                        ToDoListRow(toDo: toDo)
-                    }
-                    .onDelete(perform: $toDos.remove)
-                    .listRowSeparator(.hidden)
+                Button {
+                    let newToDo = ToDo(name: name)
+                    $listOfToDos.toDos.append(newToDo)
+                    name = ""
+                    isFocused = nil
+                } label: {
+                    Image(systemName: "plus.circle.fill")
                 }
-                .listStyle(.plain)
-                .searchable(
-                    text: $searchFilter,
-                    collection: $toDos,
-                    keyPath: \.name) {
-                        ForEach(toDos) { toDo in
-                            Text(toDo.name)
-                                .searchCompletion(toDo.name)
-                        }
-                    }
+                .disabled(name.isEmpty)
             }
-            .animation(.default, value: toDos)
-            .navigationTitle("Realm ToDos")
+            .padding()
+            
+            List {
+                // ForEach(toDos.sorted(byKeyPath: "isCompleted")) { toDo in
+                ForEach(listOfToDos.toDos/*.sorted(by: [*/
+//                    SortDescriptor(keyPath: "isCompleted"),
+//                    SortDescriptor(keyPath: "urgency", ascending: false)
+                /*])*/) { toDo in
+                    ToDoListRow(toDo: toDo)
+                }
+                .onDelete(perform: $listOfToDos.toDos.remove)
+                .listRowSeparator(.hidden)
+            }
+            .listStyle(.plain)
+//            .searchable(
+//                text: $searchFilter,
+//                collection: $listOfToDos.toDos,
+//                keyPath: \.name) {
+//                    ForEach(listOfToDos.toDos) { toDo in
+//                        Text(toDo.name)
+//                            .searchCompletion(toDo.name)
+//                    }
+//                }
+        }
+        .animation(.default, value: listOfToDos.toDos)
+        .navigationTitle(listOfToDos.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                HStack {
+                    Spacer()
+                    Button {
+                        isFocused = nil
+                    } label: {
+                        Image(systemName: "keyboard.chevron.compact.down")
+                    }
+                }
+            }
         }
     }
 }
 
+
 #Preview {
-    ToDoListView()
+    ToDoListView(listOfToDos: ListOfToDos(name: "Shopping List"))
 }

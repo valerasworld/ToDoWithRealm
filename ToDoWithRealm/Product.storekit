@@ -1,0 +1,196 @@
+{
+  "identifier" : "AA7F9C30",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "4F0BAE71",
+      "localizations" : [
+        {
+          "description" : "Lifetime Access",
+          "displayName" : "Unlock Everything Forever",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "unlockeverything",
+      "referenceName" : "Unlock Everything Forever",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "EE2B9A5C",
+      "localizations" : [
+        {
+          "description" : "For those who got the idea",
+          "displayName" : "+5 ToDos Everywhere",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Для тех, кто понял, в чём идея",
+          "displayName" : "+5 Задач во всех Списках",
+          "locale" : "ru"
+        }
+      ],
+      "productID" : "fivetodos",
+      "referenceName" : "Plus 5 ToDos",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "EF2F6870",
+      "localizations" : [
+        {
+          "description" : "Take control of a new life zone",
+          "displayName" : "One More List",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Возьми под контроль ещё одну часть своей жизн",
+          "displayName" : "Ещё один список",
+          "locale" : "ru"
+        }
+      ],
+      "productID" : "onemorelist",
+      "referenceName" : "One More List",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "7AE016E8",
+      "localizations" : [
+
+      ],
+      "name" : "Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "442386E9",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "6D8553FE",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "Unlock everything for 1 month",
+              "displayName" : "Full Access (Monthly)",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Разблокируй всё на 1 месяц",
+              "displayName" : "Полный доступ (1 мес.)",
+              "locale" : "ru"
+            }
+          ],
+          "productID" : "fullaccess.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Full Access (Monthly)",
+          "subscriptionGroupID" : "7AE016E8",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "32.89",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "55FA5F85",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "D64C7DE7",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "fullaccess.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Full Access (Yearly)",
+          "subscriptionGroupID" : "7AE016E8",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

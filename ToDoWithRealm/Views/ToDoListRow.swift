@@ -36,7 +36,7 @@ struct ToDoListRow: View {
             }
             .buttonStyle(.plain)
         }
-        .padding(.horizontal)
+//        .padding(.horizontal)
     }
 }
 
